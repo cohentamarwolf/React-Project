@@ -4,7 +4,6 @@ import AllServices from "../public/AllServices"
 import { useContext, useEffect, useState, createContext } from "react";
 import { IsAdminContext } from "../../App";
 import IconButton from '@mui/joy/IconButton';
-import Favorite from '@mui/icons-material/Favorite';
 import AddMeeting from '../user/AddMeeting';
 import DialogContent from '@mui/material/DialogContent';
 import Dialog from '@mui/material/Dialog';

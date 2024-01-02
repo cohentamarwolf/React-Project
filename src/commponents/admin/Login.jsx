@@ -15,34 +15,8 @@ import Button from '@mui/material/Button';
 import { IsAdminContext } from '../../App';
 import { useContext } from 'react';
 import { Alert } from '@mui/material';
-//
 import CircularProgress from '@mui/material/CircularProgress';
 
-//footer
-// import BottomNavigation from '@mui/material/BottomNavigation';
-// import BottomNavigationAction from '@mui/material/BottomNavigationAction';
-// import RestoreIcon from '@mui/icons-material/Restore';
-// import FavoriteIcon from '@mui/icons-material/Favorite';
-// import LocationOnIcon from '@mui/icons-material/LocationOn';
-//export default function SimpleBottomNavigation() {
-// const [value, setValue] = React.useState(0);
-
-//return (
-// <Box sx={{ width: 500 }}>
-//   <BottomNavigation
-//     showLabels
-//     value={value}
-//     onChange={(event, newValue) => {
-//       setValue(newValue);
-//     }}
-//   >
-//     <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
-//     <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-//     <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
-//   </BottomNavigation>
-// </Box>
-// );
-//}
 export default function Login() {
     const [isLoading, setIsLoading] = React.useState(false);
     const setIsAdmin = useContext(IsAdminContext).setIsAdmin;

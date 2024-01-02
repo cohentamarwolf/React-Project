@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import Button from '@mui/joy/Button';
 import { UpdateContext } from "../public/businessDetails"
 import Card from '@mui/joy/Card';
@@ -30,7 +30,6 @@ const UpdateDetails = observer(() => {
         console.log(data);
         setOpen(false);
         business.postBusiness(data);
-        //business.getBusiness();
     };
     return (<>
         <form onSubmit={handleSubmit(update)}>

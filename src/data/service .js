@@ -23,7 +23,7 @@ class Service {
                     description: "A meeting with an architect specializing in interior design for villas",
                     price: 500,
                     duration: 120,
-                    image:"https://www.keinan-arch.com/wp-content/uploads/2023/05/%D7%A2%D7%99%D7%A6%D7%95%D7%91-%D7%A4%D7%A0%D7%99%D7%9D-%D7%91%D7%99%D7%AA-%D7%9E%D7%95%D7%9C-%D7%94%D7%99%D7%9D-%D7%91%D7%90%D7%A9%D7%A7%D7%9C%D7%95%D7%9F-41-1146x764.jpg"
+                    image: "https://www.keinan-arch.com/wp-content/uploads/2023/05/%D7%A2%D7%99%D7%A6%D7%95%D7%91-%D7%A4%D7%A0%D7%99%D7%9D-%D7%91%D7%99%D7%AA-%D7%9E%D7%95%D7%9C-%D7%94%D7%99%D7%9D-%D7%91%D7%90%D7%A9%D7%A7%D7%9C%D7%95%D7%9F-41-1146x764.jpg"
                 });
                 this.postService({
                     id: "2",
@@ -72,25 +72,10 @@ class Service {
                     resolve(res.status); // Resolve with the status code
                 })
                 .catch((error) => {
-                    // console.error("Error adding meeting:", error);
                     reject(error); // Reject with the error for further handling
                 });
         });
     }
-    // postService(service) {
-    //     this.count++;
-    //     service.id = this.count;
-    //     axios.post('http://localhost:8787/service', service).then((res) => {
-    //         runInAction(() => {
-    //             this.servicesList.push(service);
-    //         })
-    //         console.log(service);
-    //         console.log( this.servicesList);
-    //     }).catch((error) => {
-    //         console.log(error);
-    //     });
-    // }
-
 }
 export default new Service();
 

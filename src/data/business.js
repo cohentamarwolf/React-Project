@@ -1,4 +1,4 @@
-import { observable, action, makeObservable, runInAction, toJS } from "mobx";
+import { observable, action, makeObservable, runInAction } from "mobx";
 import axios from "axios";
 class Business {
     business;
@@ -15,11 +15,7 @@ class Business {
             runInAction(() => {
                 this.business = res.data;
             })
-            // console.log(JSON.stringify(this.business))
-            // JSON.stringify(this.business)=={}
-            // JSON.stringify
-            // console.log(this.business.name);
-            if (this.business.name ==undefined) {
+            if (this.business.name == undefined) {
                 this.postBusiness({
                     "name": "Tamarina",
                     "address": "Zamba 3 Bnei-Brak",
@@ -30,8 +26,6 @@ class Business {
 
                 });
             }
-            // console.log(res.data);
-            // console.log(JSON.stringify(this.business));
         }).catch((error) => {
             console.log(error);
         });

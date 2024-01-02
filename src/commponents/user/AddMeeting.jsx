@@ -22,7 +22,6 @@ import service from '../../data/service ';
 import meeting from '../../data/meeting '
 import EventIcon from '@mui/icons-material/Event';
 import { observer } from "mobx-react-lite";
-import { toJS } from "mobx";
 
 const AddMeeting = observer(() => {
     const { register, handleSubmit, reset, setValue } = useForm();
@@ -144,7 +143,6 @@ const AddMeeting = observer(() => {
                 </FormControl>
                 <CardActions
                     orientation="vertical"
-                    // buttonFlex={1}
                     sx={{
                         '--Button-radius': '40px',
                         width: 'clamp(min(100%, 160px), 50%, min(100%, 200px))',
@@ -160,80 +158,4 @@ const AddMeeting = observer(() => {
 });
 export default AddMeeting;
 
-// export default function UpdateDetails() {
-//     const setOpen = useContext(MeetingContext).setOpen;
-
-//     return (<>
-//         {/* <DialogContent> */}
-//         <Card
-//             data-resizable
-//             sx={{
-//                 textAlign: 'center',
-//                 alignItems: 'center',
-//                 width: 343,
-//                 // to make the demo resizable
-//                 overflow: 'auto',
-//                 resize: 'horizontal',
-//                 '--icon-size': '100px',
-//             }}
-//         >
-//             <CardOverflow variant="solid" color="warning">
-//                 <AspectRatio
-//                     variant="outlined"
-//                     color="warning"
-//                     ratio="1"
-//                     sx={{
-//                         m: 'auto',
-//                         transform: 'translateY(50%)',
-//                         borderRadius: '50%',
-//                         width: 'var(--icon-size)',
-//                         boxShadow: 'sm',
-//                         bgcolor: 'background.surface',
-//                         position: 'relative',
-//                     }}
-//                 >
-//                     <div>
-//                         <BakeryDiningIcon color="warning" sx={{ fontSize: '4rem' }} />
-//                     </div>
-//                 </AspectRatio>
-//             </CardOverflow>
-//             {/* <Typography level="title-lg" sx={{ mt: 'calc(var(--icon-size) / 2)' }}>
-//                 🎊 Congrats Julia 🎊
-//             </Typography>
-//             <CardContent sx={{ maxWidth: '40ch' }}>
-//                 You just gain one Cookhat for Salad cooking. Share your achievement with your
-//                 friends.
-//             </CardContent> */}
-//             {/* <LocalizationProvider dateAdapter={AdapterDayjs}>
-//                 <DatePicker />
-//             </LocalizationProvider> */}
-//             <LocalizationProvider dateAdapter={AdapterDayjs}>
-//                 <DemoContainer components={['DateField', 'DatePicker']}>
-//                     <DatePicker
-//                         label="Date Picker"
-//                         format="YYYY/MM/DD"
-//                         defaultValue={dayjs('2022-04-17')}
-//                     />
-//                 </DemoContainer>
-//             </LocalizationProvider>
-//             <CardActions
-//                 orientation="vertical"
-//                 buttonFlex={1}
-//                 sx={{
-//                     '--Button-radius': '40px',
-//                     width: 'clamp(min(100%, 160px), 50%, min(100%, 200px))',
-//                 }}
-//             >
-
-//                 <Button variant="solid" color="warning" onClick={() => setOpen(false)}>
-
-//                 </Button>
-//             </CardActions>
-//         </Card>
-//         {/* </DialogContent> */}
-//         {/* <DialogActions>
-//             <Button onClick={() => setOpen(false)}>Agree</Button>
-//         </DialogActions> */}
-//     </>)
-// }
 

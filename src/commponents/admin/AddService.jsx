@@ -29,7 +29,6 @@ export default function AddMeeting() {
         } catch (error) {
             setIsServiceAvailable(false);
             setValue('name', '');
-            //focus
         }
     };
     const inputStyle = {
@@ -52,13 +51,8 @@ export default function AddMeeting() {
                         flexDirection: 'column',
                         alignItems: 'flex-start',
                     },
-                    //      display: 'flex', flexWrap: 'wrap',
-                    // flexDirection: "column"
+
                 }}
-            // noValidate
-            // autoComplete="off"
-
-
             >
                 <FormControl sx={inputStyle}>
                     <TextField
@@ -119,9 +113,8 @@ export default function AddMeeting() {
                 aria-label="Like minimal photography"
                 size="md"
                 variant="solid"
-                // color="primary"
                 sx={{
-                    bgcolor:'#B47F31',
+                    bgcolor: '#B47F31',
                     color: 'white',
                     position: 'absolute',
                     borderRadius: '50%',

@@ -1,7 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
-import AllMeeting from "./AllMeeting";
 import AddService from "./AddService";
-import AllServices from "../public/AllServices";
 import BusinessDetails from "../public/businessDetails";
 import { useContext, useEffect, useState, createContext } from "react";
 import { IsAdminContext } from "../../App";

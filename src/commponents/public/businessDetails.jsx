@@ -72,10 +72,8 @@ const BusinessDetails = observer(() => {
                         </Typography>
                         <Sheet
                             sx={{
-                                // bgcolor:'#FFFAF4',
                                 bgcolor: 'background.level1',
                                 borderRadius: 'sm',
-                                //border:1 #B79C89  solid,
                                 p: 1.5,
                                 my: 1.5,
                                 display: 'flex',

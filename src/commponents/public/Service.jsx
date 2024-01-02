@@ -16,8 +16,6 @@ export default function Service({ s }) {
                     <img
                         src={s.image}
                         srcSet={s.image}
-                        // src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=286"
-                        // srcSet="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=286&dpr=2 2x"
                         loading="lazy"
                         alt=""
                     />
@@ -31,7 +29,7 @@ export default function Service({ s }) {
                     {serviceData.description}
                 </Typography>
             </CardContent>
-            <CardOverflow variant="soft"  sx={{backgroundColor:'#B79C89'}} >
+            <CardOverflow variant="soft" sx={{ backgroundColor: '#B79C89' }} >
                 <Divider inset="context" />
                 <CardContent orientation="horizontal">
                     <Typography level="body-xs">
